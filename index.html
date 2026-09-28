@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompebloques Premium</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="../../index.html" class="back-btn">← Volver al Hub</a>
+            <h1>Rompebloques</h1>
+            <div class="stats">
+                <div>Puntos: <span id="score">0</span></div>
+                <div>Vidas: <span id="lives">3</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                <div class="overlay" id="overlay">
+                    <h2 id="overlay-title">Haz clic para comenzar</h2>
+                    <button class="btn primary" id="start-btn">Jugar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
